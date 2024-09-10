@@ -1,7 +1,9 @@
 name: native_fcm_strings
 description: "Simple plugin for getting native string resources for FCM push notifications"
 version: 1.0.0
-homepage:
+homepage: https://github.com/netglade/native_fcm_strings
+repository: https://github.com/netglade/native_fcm_strings
+issue_tracker: https://github.com/netglade/native_fcm_strings/issues
 
 environment:
   sdk: ^3.5.0
