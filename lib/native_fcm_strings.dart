@@ -44,7 +44,7 @@ abstract final class NativeFcmStrings {
 
   static String _processiOSTitle({required String iosTitle, List<String> titleLocArgs = const []}) {
     var title = iosTitle;
-    final regex = RegExp(r'(\%\@)');
+    final regex = RegExp(r'(\%\d+\$%)');
     final matches = regex.allMatches(title);
 
     for (var i = 0; i < matches.length; i++) {
@@ -54,7 +54,7 @@ abstract final class NativeFcmStrings {
 
       if (group == null) continue;
 
-      if (i >= titleLocArgs.length) break;
+      if (i > titleLocArgs.length) break;
       // ignore: avoid-unsafe-collection-methods, checked by condition.
       title = title.replaceFirst(group, titleLocArgs[i]);
     }
