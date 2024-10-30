@@ -51,7 +51,7 @@ Arguments in localized strings has to be in format `%1$s`, e.g `Message from %1$
 ## iOS Setup
 Ensure that your .strings files are placed under language-specific .lproj folders (e.g., en.lproj, cs.lproj).
 
-Arguments in localized strings has to be in format `%1$s`, e.g `Message from %@ to %@.`
+Arguments in localized strings has to be in format `%1$@`, e.g `Message from %1$@ to %2$@.`
 
 ## 👏 Contributing
 
